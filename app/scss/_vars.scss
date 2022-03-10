@@ -1,21 +1,28 @@
 //цвета
-$default: #7b7b7b;
-$title: #1a1a1a;
-
+$blue: #2405f2;
+$blue-dark: #282938;
+$blue-tint: #1c1e53;
+$gray: #f4f6fc;
+$yellow: #fcd980;
+$accent: #eef4fa;
 
 //расширения шрифтов
-%DMSans-700 {
-  font-family: "DMSans-Bold", sans-serif;
-  font-weight: 700;
+%pop-400 {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: 400;
+}
+%pop-500 {
+  font-family: "Poppins-Medium", sans-serif;
+  font-weight: 500;
+}
+%pop-600 {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-weight: 600;
 }
 
 //наследования
-%main-width {
-  max-width: 1770px;
-  margin: 0 auto;
-}
 
-%check-none{
+%check-none {
   width: 1px;
   height: 1px;
   overflow: hidden;
@@ -29,5 +36,69 @@ $title: #1a1a1a;
   justify-content: center;
 }
 
+%h1 {
+  @extend %pop-600;
+  font-size: 54px;
+  line-height: 74px;
+  color: $blue-dark;
+}
+%h2 {
+  @extend %pop-600;
+  font-size: 48px;
+  line-height: 64px;
+  color: $blue-dark;
+}
+%h3 {
+  @extend %pop-500;
+  font-size: 38px;
+  line-height: 56px;
+  color: $blue-dark;
+}
+%h4 {
+  @extend %pop-500;
+  font-size: 36px;
+  line-height: 56px;
+  color: $blue-dark;
+}
+%h5 {
+  @extend %pop-500;
+  font-size: 32px;
+  line-height: 48px;
+  color: $blue-dark;
+}
+%h6 {
+  @extend %pop-500;
+  font-size: 24px;
+  line-height: 36px;
+  color: $blue-dark;
+}
+%body-2 {
+  @extend %pop-500;
+  font-size: 16px;
+  line-height: 28px;
+  color: $blue-dark;
+}
+%label-1 {
+  @extend %pop-500;
+  font-size: 16px;
+  line-height: 28px;
+  color: $blue-dark;
+}
+%label-2 {
+  @extend %pop-500;
+  font-size: 16px;
+  line-height: 28px;
+  color: $blue-dark;
+}
 
-
+%btn {
+  width: 222px;
+  height: 64px;
+  padding: 16px 48px;
+  cursor: pointer;
+  border: none;
+  border-radius: 48px;
+  font-size: 18px;
+  line-height: 32px;
+  @extend %pop-500;
+}
