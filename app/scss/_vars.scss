@@ -72,6 +72,12 @@ $accent: #eef4fa;
   line-height: 36px;
   color: $blue-dark;
 }
+%body-1 {
+  @extend %pop-400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $blue-dark;
+}
 %body-2 {
   @extend %pop-500;
   font-size: 16px;
