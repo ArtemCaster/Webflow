@@ -1,0 +1,152 @@
+.navbar {
+  background-color: $blue-tint;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+  }
+}
+
+.navbar-menu {
+  margin-left: auto;
+  margin-right: 48px;
+  transition: all 0.8s;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 32px;
+    }
+
+    &--contact{
+      display: none;
+    }
+  }
+
+  &__link {
+    @extend %body-2;
+    color: #bbbbcb;
+    transition: all 0.3s;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.navbar__link {
+  color: #fff;
+  padding: 14px 48px;
+  @extend %pop-500;
+  font-size: 16px;
+  line-height: 28px;
+  border: 2px solid #F4F6FC33;
+  border-radius: 41px;
+  transition: all 0.3s;
+
+  &:hover{
+    border-color: #f4f6fc6c;
+  }
+}
+
+.navbar__btn{
+  display: none;
+}
+
+
+
+
+@media (max-width: 970px){
+
+  .navbar-menu{
+    position: absolute;
+    left: 0;
+    top: -500px;
+    background-color: $blue-tint;
+    width: 100%;
+    padding-bottom: 20px;
+    padding: 20px 0;
+    margin: 0;
+
+    &__list{
+      flex-direction: column;
+    }
+
+    &__item{
+      text-align: center;
+      
+      &:not(:first-child){
+        margin-left: 0;
+      }
+
+      &--contact{
+        display: block;
+      }
+    }
+    
+    &__link{
+      padding: 10px 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    &--active{
+      top: 0;
+    }
+  }
+
+  .navbar__btn{
+    display: block;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &::before,
+    &::after{
+      content: '';
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+    }
+
+    &::before{
+      top: 0;
+    }
+    &::after{
+      bottom: 0;
+    }
+
+    span{
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.5s;
+    }
+  }
+
+  .navbar__btn--active{
+    span{
+      height: 1px;
+      transform: rotate(11deg);
+    }
+  }
+
+  .navbar__link{
+    display: none;
+  }
+}

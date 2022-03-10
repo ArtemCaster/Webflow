@@ -98,7 +98,7 @@ $accent: #eef4fa;
   cursor: pointer;
   border: none;
   border-radius: 48px;
+  @extend %pop-500;
   font-size: 18px;
   line-height: 32px;
-  @extend %pop-500;
 }
