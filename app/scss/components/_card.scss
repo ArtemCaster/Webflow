@@ -1,0 +1,21 @@
+.card{
+  min-height: 316px;
+  background-color: $white;
+  padding: 58px 48px 48px 48px;
+
+  &__img{
+    display: inline-block;
+  }
+
+  &__title{
+    @extend %h6;
+    margin: 22px 0 12px 0;
+  }
+}
+
+@media (max-width: 620px){
+  .card{
+    min-height: 240px;
+    padding: 20px;
+  }
+}
