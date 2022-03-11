@@ -1,0 +1,88 @@
+.how-work {
+  background-color: $gray;
+
+  &__inner {
+    padding: 120px 0;
+    display: flex;
+  }
+
+  &__content {
+    max-width: 405px;
+    margin-right: 140px;
+
+    &-title {
+      @extend %h2;
+      margin-bottom: 16px;
+    }
+
+    &-text {
+      margin-bottom: 16px;
+    }
+
+    &-link {
+      color: $blue;
+
+      &.link {
+        &::after {
+          background-image: url(../images/icons/arrow-right-blue.svg);
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 48px;
+
+    &-item {
+      max-width: 328px;
+    }
+
+    &-icon {
+      margin-bottom: 16px;
+    }
+
+    &-title {
+      @extend %h5;
+      margin-bottom: 7px;
+    }
+
+    &-text {
+      max-width: 328px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .how-work {
+    &__content {
+      margin-right: 0;
+      margin-bottom: 50px;
+    }
+
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .how-work {
+
+    &__list{
+      grid-template-columns: 1fr;
+    }
+
+    &__inner{
+      padding: 60px 0;
+    }
+  }
+}
+
+
