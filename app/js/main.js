@@ -1,5 +1,7 @@
 $(function () {
 
+  $('.questions__list-item--active').find('.questions__list-info').slideDown(); //сделать при прокрутке
+
   $('.navbar__btn').on('click', function () {
 
     $(this).toggleClass('navbar__btn--active');
@@ -18,7 +20,17 @@ $(function () {
   $('.testimonials__slider').slick({
     infinite: false,
     speed: 700,
-    // autoplay: true,
+  })
+
+  $('.questions__list-item').on('click', function () {
+    $(this).toggleClass('questions__list-item--active');
+
+    if($(this).hasClass('questions__list-item--active')){
+      $(this).find('.questions__list-info').slideDown(500);
+    }else{
+      $(this).find('.questions__list-info').slideUp(500);
+    }
+
   })
 
 });
