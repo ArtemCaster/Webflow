@@ -27,6 +27,7 @@ body {
 }
 
 .btn-light{
+  border-color: transparent;
   display: inline-block;
   background-color: $yellow;
   @extend %label-2;
@@ -40,6 +41,7 @@ body {
 }
 
 .btn-dark{
+  border-color: transparent;
   display: inline-block;
   background-color: $blue-dark;
   color: $white;
