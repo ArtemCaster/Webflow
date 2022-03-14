@@ -16,6 +16,7 @@
 @import './components/card.scss';
 @import './components/questions.scss';
 @import './components/blog.scss';
+@import './components/info-box.scss';
 
 
 //компоненты index
@@ -24,6 +25,11 @@
 @import './index/features.scss';
 @import './index/testimonials.scss';
 @import './index/contact-form.scss';
+
+//Компоненты AboutUs
+@import './aboutUs/hero.scss';
+@import './aboutUs/aboutUs-info.scss';
+
 
 
 
