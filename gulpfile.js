@@ -37,6 +37,7 @@ function scripts () {
   return src([
     'node_modules/jquery/dist/jquery.js',  //jqery
     'node_modules/slick-carousel/slick/slick.js', //slick carusel
+    'node_modules/mixitup/dist/mixitup.js', //mixitap carusel
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))

@@ -1,5 +1,7 @@
 $(function () {
 
+  var mixer = mixitup('.our-work__items');
+
   $('.questions__list-item--active').find('.questions__list-info').slideDown(); //сделать при прокрутке
 
   $('.navbar__btn').on('click', function () {
