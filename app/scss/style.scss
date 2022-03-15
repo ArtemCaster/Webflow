@@ -27,11 +27,15 @@
 @import './index/testimonials.scss';
 @import './index/contact-form.scss';
 
-//Компоненты AboutUs
+//Компоненты aboutUs
 @import './aboutUs/hero.scss';
 @import './aboutUs/aboutUs-info.scss';
 @import './aboutUs/benefits.scss';
 @import './aboutUs/team.scss';
+
+//компоненты pricing
+@import './pricing/_pricing-plans.scss';
+
 
 
 
