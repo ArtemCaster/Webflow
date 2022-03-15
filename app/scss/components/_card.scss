@@ -3,6 +3,12 @@
   background-color: $white;
   padding: 58px 48px 48px 48px;
 
+  &__inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
+
   &__img{
     display: inline-block;
   }
@@ -17,5 +23,29 @@
   .card{
     min-height: 240px;
     padding: 20px;
+  }
+}
+
+@media (max-width: 1200px){
+  .card{
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 720px){
+  .card{
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 620px){
+  .card{
+    &__inner{
+      grid-gap: 20px;
+    }
   }
 }

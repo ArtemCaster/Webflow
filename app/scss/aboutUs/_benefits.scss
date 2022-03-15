@@ -1,0 +1,30 @@
+.benefits{
+  padding: 128px 0;
+
+  &__title{
+    @extend %h2;
+    max-width: 630px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  & .card{
+    background-color: $gray;
+  }
+
+  .card__inner{
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 620px){
+  .benefits{
+    padding: 60px 0;
+
+    &__title{
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

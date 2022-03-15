@@ -13,20 +13,6 @@
     text-align: center;
     margin: 12px auto 47px auto;
   }
-
-  &__inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 32px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .features {
-    &__inner {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
 }
 
 @media (max-width: 720px) {
@@ -38,19 +24,11 @@
       line-height: 30px;
       max-width: 300px;
     }
-
-    &__inner {
-      grid-template-columns: repeat(1, 1fr);
-    }
   }
 }
 
 @media (max-width: 620px) {
   .features {
     padding: 60px 0;
-
-    &__inner{
-      grid-gap: 20px;
-    }
   }
 }

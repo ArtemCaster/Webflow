@@ -1,0 +1,21 @@
+.partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__number-title {
+    @extend %h3;
+  }
+
+  &__logo,
+  &__number{
+    margin: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners {
+    flex-direction: column;
+  }
+}
