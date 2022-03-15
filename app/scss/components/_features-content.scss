@@ -1,0 +1,27 @@
+.features-content {
+  &__item {
+    padding: 128px 0;
+
+    &:nth-child(2) {
+      background-color: $gray;
+    }
+
+    &:nth-child(4) {
+      background: rgba(252, 217, 128, 0.1);
+    }
+
+    &:nth-child(2n) {
+      .info-box__image {
+        order: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .features-content {
+    &__item {
+      padding: 60px 0;
+    }
+  }
+}
