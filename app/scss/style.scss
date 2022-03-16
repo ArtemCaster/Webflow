@@ -37,10 +37,20 @@
 //компоненты pricing
 @import './pricing/_pricing-plans.scss';
 
-//компоненты work
+//компоненты work, work-details
 @import './work/_work.scss';
+@import './work-details/_work-read.scss';
+
+//компоненты blog / blog-read
+@import './blog/_blog.scss';
+@import './blog-read/_blog-read.scss';
 
 
+//компоненты contactUs
+@import './contactUs/_contactUs.scss';
+
+//компоненты FAQ
+@import './FAQ/_FAQ.scss';
 
 
 

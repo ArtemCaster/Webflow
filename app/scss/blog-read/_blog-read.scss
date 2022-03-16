@@ -1,0 +1,19 @@
+.blog-read {
+  margin: 0 0 128px 0;
+
+  & .container {
+    max-width: 871px;
+  }
+
+}
+
+@media (max-width: 620px) {
+  .blog-read {
+    margin: 0 0 60px 0;
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

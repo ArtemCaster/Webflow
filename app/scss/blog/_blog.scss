@@ -1,0 +1,45 @@
+.blog-header {
+  margin-top: 128px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %h2;
+    max-width: 949px;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    display: flex;
+    @extend %label-2;
+    gap: 6px;
+    margin-bottom: 32px;
+  }
+
+  &__image {
+    min-width: 100%;
+    object-fit: cover;
+    margin-bottom: 48px;
+  }
+
+  &__text {
+    max-width: 831px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 620px) {
+  .blog-header {
+    margin-top: 60px;
+
+    &__title{
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

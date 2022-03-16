@@ -1,0 +1,52 @@
+@include('components/_head.html')
+
+<body>
+  @include('components/_navbar.html')
+  <main>
+
+    <section class="contactUs">
+      <div class="container">
+        <div class="contactUs__inner">
+          <h2 class="contactUs__title">
+            Contact Us
+          </h2>
+          <div class="contactUs__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </div>
+
+          <form action="#" class="contactUs__form">
+            <div class="contactUs__form-blok">
+              <label class="contactUs__form-label">
+                Name
+                <input class="contactUs__form-input" type="text" placeholder="Enter your name">
+              </label>
+              <label class="contactUs__form-label">
+                Email
+                <input class="contactUs__form-input" type="email" placeholder="Enter your Emial">
+              </label>
+              <label class="contactUs__form-label">
+                Subject
+                <input class="contactUs__form-input" type="text" placeholder="Provide context">
+              </label>
+              <label class="contactUs__form-label">
+                Subject
+                <input class="contactUs__form-input" type="text" placeholder="Select Subject">
+              </label>
+            </div>
+            <label class="contactUs__form-label">
+              Message
+              <textarea class="contactUs__form-textarea" placeholder="Write your  question here"></textarea>
+            </label>
+            <input class="btn-dark contactUs__form-btn" type="submit" value="Send Messege">
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  @include('components/_footer.html')
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -75,6 +75,34 @@ body {
   }
 }
 
+.text__inner{
+  h3 {
+    @extend %h3;
+    margin-bottom: 18px;
+  }
+
+  p {
+    margin-bottom: 18px;
+  }
+
+  ul {
+    list-style-position: inside;
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 16px;
+  }
+
+  img {
+    min-width: 100%;
+    padding: 43px 57px;
+    background: linear-gradient(131.34deg, #f4ede1 16.74%, #98b1c6 103.17%);
+    margin: 100px 0;
+    object-fit: cover;
+  }
+}
+
 
 
 
@@ -86,6 +114,19 @@ body {
 
 
 @media (max-width: 620px){
+
+  .text__inner{
+
+    h3{
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    img{
+      padding: 15px;
+      margin: 50px 0;
+    }
+  }
   
   .menu{
     padding: 0;

@@ -39,6 +39,10 @@
   }
 }
 
+.blog__title-center {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .blog__item {
     &-title {
