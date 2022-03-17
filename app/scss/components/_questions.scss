@@ -37,6 +37,9 @@
 
     &-plus{
       transition: all 0.8s;
+      width: 16px;
+      height: 16px;
+      display: block;
     }
 
     &-item{
@@ -73,6 +76,7 @@
     &-top{
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     &-title{

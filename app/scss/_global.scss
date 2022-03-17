@@ -34,6 +34,7 @@ body {
   padding: 16px 56px;
   border-radius: 40px;
   transition: all 0.4s;
+  cursor: pointer;
 
   &:hover{
     background-color: #FDE4A6;
@@ -49,6 +50,7 @@ body {
   padding: 16px 56px;
   border-radius: 40px;
   transition: all 0.4s;
+  cursor: pointer;
 
   &:hover{
     background-color: #535460;
@@ -104,16 +106,12 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
+@media (max-width: 1400px){
+ 
+}
 
 @media (max-width: 620px){
+  
 
   .text__inner{
 

@@ -3,6 +3,7 @@
   
   &__inner{
     display: flex;
+    justify-content: space-between;
     height: calc(100vh - 92px);
   }
 
@@ -28,6 +29,12 @@
 
   &__links-work{
     margin-right: 40px;
+    z-index: 2;
+    position: relative;
+  }
+
+  &__links-price{
+    z-index: 1;
   }
 
   &__img{

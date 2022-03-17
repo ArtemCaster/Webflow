@@ -92,6 +92,7 @@
 
     &--active {
       background-color: $blue-tint;
+      z-index: 1;
 
       .pricing-plans__item-title {
         color: $white;

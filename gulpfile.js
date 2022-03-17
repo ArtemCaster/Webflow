@@ -38,6 +38,7 @@ function scripts () {
     'node_modules/jquery/dist/jquery.js',  //jqery
     'node_modules/slick-carousel/slick/slick.js', //slick carusel
     'node_modules/mixitup/dist/mixitup.js', //mixitap carusel
+    'node_modules/wow.js/dist/wow.js', //wow.js
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
