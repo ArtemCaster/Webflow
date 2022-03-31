@@ -107,8 +107,21 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .testimonials {
+    padding: 100px 0;
+
+    &__title{
+      font-size: 30px;
+      line-height: 43px;
+    }
+
+    &__text{
+      font-size: 12px;
+      line-height: 24px;
+      max-width: 300px;
+    }
+
     &__slider {
       max-width: 500px;
     }
@@ -133,7 +146,7 @@
     &__slider {
       max-width: 100%;
 
-      &-item{
+      &-item {
         padding: 0px 10px;
       }
     }
@@ -148,18 +161,17 @@
 
 @media (max-width: 380px) {
   .testimonials {
-
-    &__title{
+    &__title {
       font-size: 30px;
       line-height: 40px;
     }
 
-    &__text{
+    &__text {
       font-size: 15px;
       max-width: 300px;
     }
 
-    &-comment__blackquote{
+    &-comment__blackquote {
       font-size: 18px;
     }
   }

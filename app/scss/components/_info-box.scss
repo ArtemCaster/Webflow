@@ -41,12 +41,19 @@
 
 
 
-@media (max-width: 1200px){
+@media (max-width: 1300px){
   .info-box{
 
     &__content{
       padding: 20px 0;
     }
+  }
+}
+
+@media (max-width: 970px){
+  .info-box__text{
+    font-size: 12px;
+    line-height: 24px;
   }
 }
 
@@ -56,6 +63,10 @@
     &__title{
       font-size: 30px;
       line-height: 40px;
+    }
+
+    &__text{
+      max-width: 380px;
     }
 
     &__image{

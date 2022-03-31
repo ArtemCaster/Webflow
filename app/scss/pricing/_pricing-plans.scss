@@ -28,7 +28,7 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     min-height: 745px;
     padding: 64px 48px;
     text-align-last: left;
@@ -62,7 +62,7 @@
     }
 
     &-list {
-      margin-bottom: 79px;
+      
     }
 
     &-li {
@@ -114,15 +114,32 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .pricing-plans {
+    padding: 60px 0;
+
+    &__title{
+      font-size: 30px;
+      line-height: 43px;
+    }
+
+    &__subtitle{
+      font-size: 12px;
+      line-height: 24px;
+    }
+
     &__item {
       min-height: 500px;
       padding: 30px 30px;
 
+      &-list{
+        margin-bottom: 40px;
+      }
+
       &-title {
         font-size: 22px;
         line-height: 30px;
+        margin-bottom: 10px;
 
         span {
           font-size: 10px;
@@ -131,13 +148,14 @@
       }
 
       &-subtitle {
-        font-size: 17px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 5px;
       }
 
       &-text {
-        font-size: 14px;
-        line-height: 23px;
+        font-size: 10px;
+        line-height: 20px;
         margin-bottom: 20px;
       }
 

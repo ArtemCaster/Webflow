@@ -59,6 +59,7 @@
       resize: none;
       min-height: 150px;
       margin-bottom: 32px;
+      width: 100%;
 
       &::placeholder{
         @extend %body-1;
@@ -68,15 +69,9 @@
 
 }
 
-@media (max-width: 1120px){
-  .contactUs{
-    &__form-label{
-      max-width: 100%;
-    }
-  }
-}
 
-@media (max-width: 620px){
+
+@media (max-width: 1300px){
   .contactUs{
     margin: 60px 0;
 
@@ -100,6 +95,13 @@
         width: 100%;
       }
     }
-    
+  }
+}
+
+@media (max-width: 1120px){
+  .contactUs{
+    &__form-label{
+      max-width: 100%;
+    }
   }
 }

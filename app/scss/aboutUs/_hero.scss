@@ -110,16 +110,49 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+
+
+  .hero {
+    padding: 60px 0;
+  }
+
   .who-we {
     &__content-item {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
+
+    &__inner {
+      padding: 30px;
+    }
+
+    &__content {
+      &-title {
+        font-size: 30px;
+        line-height: 43px;
+      }
+
+      &-text {
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+
+    &__image {
+      max-height: 300px;
+    }
   }
 
+  .road-map {
+    padding-top: 60px;
 
+    &__title {
+      font-size: 30px;
+      line-height: 43px;
+    }
+  }
 }
 
 @media (max-width: 970px) {
@@ -131,10 +164,17 @@
       padding: 80px 10px;
     }
   }
+
+  .hero .info-box {
+    .info-box__title {
+      font-size: 30px;
+      line-height: 43px;
+    }
+  }
 }
 
 @media (max-width: 620px) {
-  .hero{
+  .hero {
     padding: 60px 0;
   }
   .who-we {
@@ -152,19 +192,19 @@
     }
   }
 
-  .road-map{
+  .road-map {
     padding: 60px 0;
 
-    &__title{
+    &__title {
       font-size: 30px;
       line-height: 40px;
     }
-    
-    &__inner{
+
+    &__inner {
       flex-direction: column;
     }
 
-    &__item{
+    &__item {
       max-width: 100%;
       margin-bottom: 30px;
     }
@@ -175,10 +215,10 @@
   .who-we {
     margin-top: 60px;
 
-    &__inner{
+    &__inner {
       padding: 60px 15px;
     }
-    
+
     &__content-title {
       font-size: 30px;
       line-height: 40px;
@@ -188,6 +228,4 @@
       line-height: 25px;
     }
   }
-
 }
-

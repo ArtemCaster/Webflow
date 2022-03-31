@@ -11,7 +11,6 @@
   &__inner {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 32px;
   }
@@ -20,7 +19,6 @@
     padding: 48px 64px 32px 64px;
     background-color: $white;
     max-width: 296px;
-    // cursor: pointer;
 
     &-image {
       width: 168px;
@@ -71,7 +69,7 @@
   }
 }
 
-@media (max-width: 620px){
+@media (max-width: 1300px){
   .team{
     padding: 60px 0;
 
@@ -81,13 +79,18 @@
     }
 
     &__item{
-      min-width: 100%;
-      text-align: center;
+      padding: 20px 40px;
       
       &-image{
         margin: 0 auto;
         margin-bottom: 30px;
       }
     }
+  }
+}
+
+@media (max-width: 1100px){
+  .team__inner {
+   flex-wrap: wrap;
   }
 }

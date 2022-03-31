@@ -85,7 +85,7 @@
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1300px){
   .work-read{
     padding: 60px 0;
 
@@ -100,8 +100,17 @@
       max-width: 400px;
     }
 
+    &__text{
+      font-size: 12px;
+      line-height: 24px;
+    }
+
     &__image{
-      padding: 15px;
+      padding: 30px;
+
+      img{
+        max-height: 500px;
+      }
     }
 
     &__info-text{
@@ -110,7 +119,7 @@
     }
 
     &__inner{
-      margin: 50px 0;
+      margin: 50px auto;
     }
   }
 }

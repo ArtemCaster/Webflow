@@ -1,18 +1,27 @@
-.aboutUs-info{
+.aboutUs-info {
   padding: 128px 0;
   background-color: $accent;
 
-  & .info-box:not(:first-child){
+  & .info-box:not(:first-child) {
     margin-top: 94px;
   }
 }
 
-@media (max-width: 620px){
-  .aboutUs-info{
+@media (max-width: 1300px) {
+  .aboutUs-info {
     padding: 60px 0;
 
-    & .info-box:not(:first-child){
-      margin-top: 0;
+    & .info-box:not(:first-child) {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUs-info {
+
+    & .info-box:not(:first-child) {
+      margin-top: 20px;
     }
   }
 }

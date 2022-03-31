@@ -87,11 +87,35 @@
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1300px){
   .questions{
+    padding: 60px 0;
+
+    &__info-title{
+      font-size: 30px;
+      line-height: 43px;
+    }
     
     &__info{
       margin-right: 15px;
+    }
+
+    &__list-title{
+      font-size: 16px;
+      line-height: 36px;
+    }
+
+    &__list-info{
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    &__list-item{
+      padding: 20px 0;
+      
+      &::before{
+        padding-right: 35px;
+      }
     }
   }
 }
